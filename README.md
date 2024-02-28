@@ -1,2 +1,3 @@
-# EE310
-This repository is for our class work.
+# Microcontroller  - EE310
+This is an amazing course ....
+## Assignment number 1
