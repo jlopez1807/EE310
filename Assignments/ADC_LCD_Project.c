@@ -42,12 +42,12 @@
  Main Program
 ---------------------------------*/  
 void main(void)
-{     
-    while (1){
+{   
     PORTD = 0; ANSELD = 0; TRISD = 0; //used for RS and E of LCD
     PORTB = 0; ANSELB = 0; TRISB = 0; //used for LCD
     ADC_Init();               /* Initializing the ADC*/
     LCD_Init();               /* Initializing the 16x2 LCD */
+    while (1){
     //OSCCON=0x72;            /* Use Internal Oscillator with Frequency 8MHZ */   
         ADCON0bits.GO=1;
         while (ADCON0bits.GO); //stay here until conversion is done (when ADCON0bits.Go goes to 0)
